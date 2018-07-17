@@ -1,0 +1,8 @@
+<template name="post">
+    <h1>This is Post Page</h1>
+    {{#each blogPosts}}
+    <h1>{{title}}</h1>
+            {{body}}
+            <a href="{{ pathFor route='postShow'}}">View More</a>
+    {{/each}}
+</template>
